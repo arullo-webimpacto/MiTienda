@@ -148,6 +148,7 @@ class Miprimermodulo extends Module
         $this->context->smarty->assign(array(
             'texto_variable' => $texto,
         ));
+        $this->context->controller->addCSS($this->_path.'/views/css/front.css');
         return $this->context->smarty->fetch($this->local_path.'views/templates/hook/configure.tpl');
     }
     // 
