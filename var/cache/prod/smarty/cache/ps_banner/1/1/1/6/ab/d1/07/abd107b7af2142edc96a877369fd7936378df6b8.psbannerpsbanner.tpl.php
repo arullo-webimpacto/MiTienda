@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-12 14:58:53
+/* Smarty version 3.1.33, created on 2020-05-12 19:41:13
   from 'module:psbannerpsbanner.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eba9d8d603a54_14844241',
+  'unifunc' => 'content_5ebadfb9630e56_50999238',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_5eba9d8d603a54_14844241 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ebadfb9630e56_50999238 (Smarty_Internal_Template $_smarty_tpl) {
 ?><a class="banner" href="http://localhost/mitienda/es/" title="">
       <img src="http://localhost/mitienda/modules/ps_banner/img/sale70.png" alt="" title="" class="img-fluid">
   </a>

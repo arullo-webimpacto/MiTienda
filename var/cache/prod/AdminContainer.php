@@ -1183,6 +1183,8 @@ class AdminContainer extends Container
                 59 => 'ps_checkout',
                 60 => 'blockreassurance',
                 61 => 'ps_facetedsearch',
+                62 => 'mymodule',
+                63 => 'miprimermodulo',
             ],
             'ps_cache_dir' => 'C:\\xampp\\htdocs\\mitienda/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',

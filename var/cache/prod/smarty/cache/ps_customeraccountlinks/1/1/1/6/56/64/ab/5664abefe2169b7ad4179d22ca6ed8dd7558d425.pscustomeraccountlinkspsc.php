@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-12 14:58:23
+/* Smarty version 3.1.33, created on 2020-05-12 19:41:14
   from 'module:pscustomeraccountlinkspsc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eba9d6fcbc369_74684339',
+  'unifunc' => 'content_5ebadfba2a5754_28017920',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_5eba9d6fcbc369_74684339 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ebadfba2a5754_28017920 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
 ));
 ?>
@@ -56,6 +56,11 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <li>
           <a href="http://localhost/mitienda/es/direcciones" title="Direcciones" rel="nofollow">
             Direcciones
+          </a>
+        </li>
+            <li>
+          <a href="http://localhost/mitienda/es/descuento" title="Cupones de descuento" rel="nofollow">
+            Cupones de descuento
           </a>
         </li>
         
