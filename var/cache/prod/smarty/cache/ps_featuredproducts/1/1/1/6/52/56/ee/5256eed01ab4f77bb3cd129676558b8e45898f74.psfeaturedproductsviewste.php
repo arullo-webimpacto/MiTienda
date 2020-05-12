@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-12 16:12:34
+/* Smarty version 3.1.33, created on 2020-05-12 19:41:13
   from 'module:psfeaturedproductsviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ebaaed2d09e67_51019383',
+  'unifunc' => 'content_5ebadfb95b9681_66640052',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -30,7 +30,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_5ebaaed2d09e67_51019383 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ebadfb95b9681_66640052 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="featured-products clearfix">
   <h2 class="h2 products-section-title text-uppercase">
     Productos Destacados
@@ -51,7 +51,7 @@ function content_5ebaaed2d09e67_51019383 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title" itemprop="name"><a href="http://localhost/mitienda/es/men/1-1-hummingbird-printed-t-shirt.html#/1-tamano-s/8-color-blanco">Hummingbird printed t-shirt</a></h3>
+                      <h3 class="h3 product-title" itemprop="name"><a href="http://localhost/mitienda/es/men/1-1-hummingbird-printed-t-shirt.html#/1-tamano-s/8-color-blanco">Camiseta Colibrí Estampado</a></h3>
                   
 
         

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-12 14:58:02
+/* Smarty version 3.1.33, created on 2020-05-12 19:41:26
   from 'C:\xampp\htdocs\mitienda\modules\welcome\views\contents\end.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5eba9d5a8de455_79741573',
+  'unifunc' => 'content_5ebadfc67c7d54_45603914',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5eba9d5a8de455_79741573 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ebadfc67c7d54_45603914 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="onboarding-welcome" class="modal-body">
     <div class="col-12">
