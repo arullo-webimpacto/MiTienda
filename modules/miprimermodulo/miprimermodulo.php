@@ -71,12 +71,19 @@ class Miprimermodulo extends Module
     {
         // Configuration::updateValue('MODULO_ABRAHAM_TEXTO_HOME', false);
 
-        // return parent::install() &&
-        //     $this->registerHook('displayProductPageDrawer') &&
-        //     $this->registerHook('displayHome');
-        if( !parent::install() || !$this->registerHook('displayHome'))
+        if (!parent::install() ||
+            !$this->registerHook('displayHome') ||
+            !$this->registerHook('hookDisplayLeftColumn')
+        ) {
             return false;
+        }
+
         return true;
+
+
+        // if( !parent::install() || !$this->registerHook('displayHome'))
+        //     return false;
+        // return true;
     }
 
     public function uninstall()
@@ -155,14 +162,14 @@ class Miprimermodulo extends Module
         return $this->context->smarty->fetch($this->local_path.'views/templates/hook/home.tpl');
     }
 
-    public function displayProductPageDrawer()
+    public function hookDisplayLeftColumn()
     {
         $texto = Configuration::get('MODULO_ABRAHAM_TEXTO_HOME');
         $this->context->smarty->assign(array(
             'texto_variable' => $texto,
         ));
         $this->context->controller->addCSS($this->_path.'/views/css/front.css');
-        return $this->context->smarty->fetch($this->local_path.'views/templates/hook/home.tpl');
+        return $this->context->smarty->fetch($this->local_path.'views/templates/hook/product.tpl');
     }
     // 
     // Add the CSS & JavaScript files you want to be loaded in the BO.
