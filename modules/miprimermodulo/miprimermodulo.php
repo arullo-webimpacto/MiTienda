@@ -34,6 +34,11 @@ if (!defined('_PS_VERSION_')) {
 
 class Miprimermodulo extends Module
 {
+    public $php_self = 'product';
+
+    /** @var Product */
+    protected $product;
+    
     protected $config_form = false;
 
     public function __construct()
@@ -73,7 +78,7 @@ class Miprimermodulo extends Module
 
         if (!parent::install() ||
             !$this->registerHook('displayHome') ||
-            !$this->registerHook('hookDisplayLeftColumn')
+            !$this->registerHook('displayFooterProduct')
         ) {
             return false;
         }
@@ -88,9 +93,18 @@ class Miprimermodulo extends Module
 
     public function uninstall()
     {
-        if( !parent::uninstall() || !$this->unregisterHook('displayHome'))
+
+        if (!parent::uninstall() ||
+            !$this->unregisterHook('displayHome') ||
+            !$this->unregisterHook('displayFooterProduct')
+        ) {
             return false;
+        }
+
         return true;
+        // if( !parent::uninstall() || !$this->unregisterHook('displayHome'))
+        //     return false;
+        // return true;
     }
 
     /**
@@ -162,13 +176,17 @@ class Miprimermodulo extends Module
         return $this->context->smarty->fetch($this->local_path.'views/templates/hook/home.tpl');
     }
 
-    public function hookDisplayLeftColumn()
+    public function hookDisplayFooterProduct()
     {
         $texto = Configuration::get('MODULO_ABRAHAM_TEXTO_HOME');
-        $this->context->smarty->assign(array(
-            'texto_variable' => $texto,
-        ));
-        $this->context->controller->addCSS($this->_path.'/views/css/front.css');
+        $this->context->smarty->assign(array('texto_variable' => $texto,));
+
+        // $query = "SELECT `ps_product_lang`.`name` FROM `ps_product_lang` WHERE `ps_product_lang`.`id_product` = 1";
+        // $producto= Db::getInstance()->execute($query);
+        // $producto="Adios";
+        // $producto = Db::getInstance()->ExecuteS('SELECT `name` FROM `ps_` WHERE `ps_product_lang`.`id_product` = 1');
+        // $this->context->smarty->assign(array('pro' => $producto));
+        $this->context->controller->addCSS($this->_path.'/views/css/product.css');
         return $this->context->smarty->fetch($this->local_path.'views/templates/hook/product.tpl');
     }
     // 

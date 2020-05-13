@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-13 10:52:33
+/* Smarty version 3.1.33, created on 2020-05-13 16:09:08
   from 'C:\xampp\htdocs\mitienda\themes\classic\templates\catalog\_partials\product-activation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ebbb551ebc556_93605796',
+  'unifunc' => 'content_5ebbff8433d563_22839505',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ebbb551ebc556_93605796 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ebbff8433d563_22839505 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['page']->value['admin_notifications']) {?>
   <div class="alert alert-warning row" role="alert">
     <div class="container">
