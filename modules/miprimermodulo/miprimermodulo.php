@@ -34,11 +34,9 @@ if (!defined('_PS_VERSION_')) {
 
 class Miprimermodulo extends Module
 {
-    public $php_self = 'product';
-
     /** @var Product */
     protected $product;
-    
+
     protected $config_form = false;
 
     public function __construct()
@@ -176,16 +174,39 @@ class Miprimermodulo extends Module
         return $this->context->smarty->fetch($this->local_path.'views/templates/hook/home.tpl');
     }
 
+    public function buscar(){
+        if(isset($_GET["id"])){
+            $id=(int)$_GET["id"];
+             
+            $usuario=new Usuario();
+            $usuario->deleteById($id);
+        }
+        $this->redirect();
+    }
+
+
     public function hookDisplayFooterProduct()
     {
         $texto = Configuration::get('MODULO_ABRAHAM_TEXTO_HOME');
         $this->context->smarty->assign(array('texto_variable' => $texto,));
+        
 
+
+        $producto =new Product();
+        $producto = Product::getProductName(1);
+        $this->context->smarty->assign(array('product' => $producto,));
+        // $product = $params['product'];
+        // if ($product instanceof Product ) {
+        // $product = (array) $product;
+        // }
+        // $product['id'];
+        // $product_price = $this->product->getPrice(Product::$_taxCalculationMethod == PS_TAX_INC, $id_product_attribute);
+        // $this->context->smarty->assign(array('precio' => $product_price));
         // $query = "SELECT `ps_product_lang`.`name` FROM `ps_product_lang` WHERE `ps_product_lang`.`id_product` = 1";
         // $producto= Db::getInstance()->execute($query);
         // $producto="Adios";
         // $producto = Db::getInstance()->ExecuteS('SELECT `name` FROM `ps_` WHERE `ps_product_lang`.`id_product` = 1');
-        // $this->context->smarty->assign(array('pro' => $producto));
+        
         $this->context->controller->addCSS($this->_path.'/views/css/product.css');
         return $this->context->smarty->fetch($this->local_path.'views/templates/hook/product.tpl');
     }

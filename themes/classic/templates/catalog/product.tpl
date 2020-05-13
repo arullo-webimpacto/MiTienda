@@ -250,7 +250,6 @@
 
     {block name='product_footer'}
       {hook h='displayFooterProduct' product=$product category=$category}
-      <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
     {/block}
 
     {block name='product_images_modal'}

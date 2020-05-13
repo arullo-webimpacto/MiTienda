@@ -24,5 +24,6 @@
 *}
 <div class="colores">
 	<h1>{$texto_variable}</h1>
+	<h1> Vamos ahí: {$product}</h1>
 </div>
 
