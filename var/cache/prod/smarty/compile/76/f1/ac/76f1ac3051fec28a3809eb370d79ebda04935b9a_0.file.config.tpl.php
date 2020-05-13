@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-12 19:41:29
+/* Smarty version 3.1.33, created on 2020-05-13 10:52:29
   from 'C:\xampp\htdocs\mitienda\modules\dashgoals\views\templates\hook\config.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ebadfc95b3851_14273165',
+  'unifunc' => 'content_5ebbb54da55501_64886860',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ebadfc95b3851_14273165 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ebbb54da55501_64886860 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section id="dashgoals_config" class="dash_config hide">
 	<header><i class="icon-wrench"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Configuration','d'=>'Admin.Global'),$_smarty_tpl ) );?>
 </header>
@@ -46,7 +46,7 @@ function content_5ebadfc95b3851_14273165 (Smarty_Internal_Template $_smarty_tpl)
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['goals_months']->value, 'month');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['month']->key => $_smarty_tpl->tpl_vars['month']->value) {
-$__foreach_month_0_saved = $_smarty_tpl->tpl_vars['month'];
+$__foreach_month_29_saved = $_smarty_tpl->tpl_vars['month'];
 ?>
 				<tr>
 					<td>
@@ -88,7 +88,7 @@ $__foreach_month_0_saved = $_smarty_tpl->tpl_vars['month'];
 					</td>
 				</tr>
 				<?php
-$_smarty_tpl->tpl_vars['month'] = $__foreach_month_0_saved;
+$_smarty_tpl->tpl_vars['month'] = $__foreach_month_29_saved;
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>

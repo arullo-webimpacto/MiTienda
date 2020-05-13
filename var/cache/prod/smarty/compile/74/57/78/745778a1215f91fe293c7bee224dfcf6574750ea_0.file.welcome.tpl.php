@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-12 19:35:21
+/* Smarty version 3.1.33, created on 2020-05-13 10:52:27
   from 'C:\xampp\htdocs\mitienda\modules\welcome\views\contents\welcome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ebade59a11d64_90051696',
+  'unifunc' => 'content_5ebbb54b543577_10095163',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ebade59a11d64_90051696 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ebbb54b543577_10095163 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="onboarding-welcome">
   <i class="material-icons onboarding-button-shut-down">close</i>

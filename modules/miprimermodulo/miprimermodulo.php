@@ -69,6 +69,11 @@ class Miprimermodulo extends Module
     // }
     public function install()
     {
+        // Configuration::updateValue('MODULO_ABRAHAM_TEXTO_HOME', false);
+
+        // return parent::install() &&
+        //     $this->registerHook('displayProductPageDrawer') &&
+        //     $this->registerHook('displayHome');
         if( !parent::install() || !$this->registerHook('displayHome'))
             return false;
         return true;
@@ -105,8 +110,8 @@ class Miprimermodulo extends Module
         $helper->allow_employee_form_lang = $this->context->controller->allow_employee_form_lang;
         $helper->title = $this->displayName;
 
-        $helper->submit_action = 'urimodulo';
-        $helper->fields_value['texto'] = Configuration::get('URI_MODULO_TEXTO_HOME');
+        $helper->submit_action = 'miprimermodulo';
+        $helper->fields_value['texto'] = Configuration::get('MODULO_ABRAHAM_TEXTO_HOME');
         
         $this->form[0] = array(
             'form' => array(
@@ -135,21 +140,29 @@ class Miprimermodulo extends Module
 
     public function postProcess()
     {
-        if (Tools::isSubmit('urimodulo')) {
+        if (Tools::isSubmit('miprimermodulo')) {
             $texto = Tools::getValue('texto');
-            Configuration::updateValue('URI_MODULO_TEXTO_HOME', $texto);
+            Configuration::updateValue('MODULO_ABRAHAM_TEXTO_HOME', $texto);
             return $this->displayConfirmation($this->l('Updated Successfully'));
         }
     }
 
     public function hookDisplayHome()
     {
-        $texto = Configuration::get('URI_MODULO_TEXTO_HOME');
+        $texto = Configuration::get('MODULO_ABRAHAM_TEXTO_HOME');
+        $this->context->smarty->assign(array('texto_variable' => $texto,));
+        $this->context->controller->addCSS($this->_path.'/views/css/front.css');
+        return $this->context->smarty->fetch($this->local_path.'views/templates/hook/home.tpl');
+    }
+
+    public function displayProductPageDrawer()
+    {
+        $texto = Configuration::get('MODULO_ABRAHAM_TEXTO_HOME');
         $this->context->smarty->assign(array(
             'texto_variable' => $texto,
         ));
         $this->context->controller->addCSS($this->_path.'/views/css/front.css');
-        return $this->context->smarty->fetch($this->local_path.'views/templates/hook/configure.tpl');
+        return $this->context->smarty->fetch($this->local_path.'views/templates/hook/home.tpl');
     }
     // 
     // Add the CSS & JavaScript files you want to be loaded in the BO.

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-12 19:35:23
+/* Smarty version 3.1.33, created on 2020-05-13 10:52:30
   from 'C:\xampp\htdocs\mitienda\admin006nxtose\themes\default\template\layout.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ebade5b8fb8d6_95021715',
+  'unifunc' => 'content_5ebbb54eb7d731_05071662',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ebade5b8fb8d6_95021715 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ebbb54eb7d731_05071662 (Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['header']->value;?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['conf']->value)) {?>

@@ -26,6 +26,9 @@
 * to avoid any conflicts with others containers.
 */
 .colores{
+    height: 100px;
+    text-align: center;
     background-color: red;
     color: blue;
+    padding-top: 20px;
 }
