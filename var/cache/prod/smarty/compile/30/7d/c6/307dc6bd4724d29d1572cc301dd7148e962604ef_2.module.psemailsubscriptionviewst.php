@@ -1,19 +1,11 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.33, created on 2020-05-14 14:22:18
-=======
-/* Smarty version 3.1.33, created on 2020-05-14 17:24:02
->>>>>>> rama-assign
+/* Smarty version 3.1.33, created on 2020-05-14 17:34:06
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-<<<<<<< HEAD
-  'unifunc' => 'content_5ebd37fa858f49_44664907',
-=======
-  'unifunc' => 'content_5ebd62921f8453_00289114',
->>>>>>> rama-assign
+  'unifunc' => 'content_5ebd64eee4dcf7_26078712',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -28,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_5ebd37fa858f49_44664907 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_5ebd62921f8453_00289114 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> rama-assign
+function content_5ebd64eee4dcf7_26078712 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="block_newsletter col-lg-8 col-md-12 col-sm-12">
   <div class="row">
