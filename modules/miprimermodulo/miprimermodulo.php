@@ -185,27 +185,28 @@ class Miprimermodulo extends Module
     }
 
 
-    public function hookDisplayFooterProduct()
+    public function hookDisplayFooterProduct(array $params)
     {
         $texto = Configuration::get('MODULO_ABRAHAM_TEXTO_HOME');
         $this->context->smarty->assign(array('texto_variable' => $texto,));
+        //$product = new Product($params['product']);
+        $product = $params['product']['name'];
+        //dump($product);
+        //$producto = new Producto();
+        //$product =  Product::getProductName($params['product']);
         
-
-
-        $producto =new Product();
-        $producto = Product::getProductName(1);
-        $this->context->smarty->assign(array('product' => $producto,));
-        // $product = $params['product'];
-        // if ($product instanceof Product ) {
-        // $product = (array) $product;
-        // }
-        // $product['id'];
-        // $product_price = $this->product->getPrice(Product::$_taxCalculationMethod == PS_TAX_INC, $id_product_attribute);
-        // $this->context->smarty->assign(array('precio' => $product_price));
-        // $query = "SELECT `ps_product_lang`.`name` FROM `ps_product_lang` WHERE `ps_product_lang`.`id_product` = 1";
-        // $producto= Db::getInstance()->execute($query);
-        // $producto="Adios";
-        // $producto = Db::getInstance()->ExecuteS('SELECT `name` FROM `ps_` WHERE `ps_product_lang`.`id_product` = 1');
+        //$products = $this->getSpecialProducts($params['product']);
+        //$productt = Product::getAttributesParams($params);
+        
+        //$summary = $this->context->cart->getSummaryDetails();
+        //Product::getProductCategoriesFull();
+        //$product = new Product($params.);$params['product']
+        // Hook::exec('displayFooterProduct', $params);
+        //$product = new Product((int) 1);
+        //$this->context->smarty->assign('HOOK_FOOTER_PRODUCT',Hook::exec('displayFooterProduct'));
+        // $producto = Product::getProductName(1);
+        //dump($product);
+        $this->context->smarty->assign(array('product' => $product,));
         
         $this->context->controller->addCSS($this->_path.'/views/css/product.css');
         return $this->context->smarty->fetch($this->local_path.'views/templates/hook/product.tpl');
@@ -221,27 +222,7 @@ class Miprimermodulo extends Module
     //     }
     // }
 
-    // 
-    //  Add the CSS & JavaScript files you want to be added on the FO.
-    //  
-    // public function hookHeader()
-    // {
-    //     $this->context->controller->addJS($this->_path.'/views/js/front.js');
-    //     $this->context->controller->addCSS($this->_path.'/views/css/front.css');
-    // }
-
-    // public function hookDisplayHome()
-    // {
-    //     $this->context->controller->addJS($this->_path.'/views/js/front.js');
-    //     $this->context->controller->addCSS($this->_path.'/views/css/front.css');
-    // }
-
-    // public function hookDisplayLeftColumn()
-    // {
-    //     $this->context->controller->addJS($this->_path.'/views/js/front.js');
-    //     $this->context->controller->addCSS($this->_path.'/views/css/front.css');
-    // }
-
+    
     // public function rederWidget($hookName, array $configuration){
 
     //     $this->context->smarty->assign($this->getWidgetVariables($hookName,$configuration));

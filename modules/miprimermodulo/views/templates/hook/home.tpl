@@ -25,6 +25,6 @@
 
 <div class="colores">
 	<h1>{$texto_variable}</h1>
-	<h1 >hola {$product.name}</h1>
+	<h1 >Hola</h1>
 </div>
 
