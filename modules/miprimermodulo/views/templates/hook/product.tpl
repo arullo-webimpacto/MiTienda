@@ -25,5 +25,7 @@
 <div class="colores">
 	<h1>{$texto_variable}</h1>
 	<h1> Producto: {$product}</h1>
+	<h1> ID_categoria: {$categoria_id}</h1>
+	<h1> NAME_categoria: {$categoria_name}</h1>
 </div>
 

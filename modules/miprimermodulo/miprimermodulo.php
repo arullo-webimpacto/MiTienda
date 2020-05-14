@@ -189,31 +189,29 @@ class Miprimermodulo extends Module
     {
         $texto = Configuration::get('MODULO_ABRAHAM_TEXTO_HOME');
         $this->context->smarty->assign(array('texto_variable' => $texto,));
-        //$product = new Product($params['product']);
         $product = $params['product']['name'];
-        //dump($product);
-        //$producto = new Producto();
-        //$product =  Product::getProductName($params['product']);
+        $this->context->smarty->assign(array('product' => $product,));
+        $categoria_id = $params['product']['id_category_default'];
+        $this->context->smarty->assign(array('categoria_id' => $categoria_id,));
+        $categoria_name = $params['product']['category_name'];
+        $this->context->smarty->assign(array('categoria_name' => $categoria_name,));
+        //dump($categoria);
+        //dump($params['product']['id_category_default']);
+        
         
         //$products = $this->getSpecialProducts($params['product']);
         //$productt = Product::getAttributesParams($params);
         
         //$summary = $this->context->cart->getSummaryDetails();
         //Product::getProductCategoriesFull();
-        //$product = new Product($params.);$params['product']
-        // Hook::exec('displayFooterProduct', $params);
-        //$product = new Product((int) 1);
         //$this->context->smarty->assign('HOOK_FOOTER_PRODUCT',Hook::exec('displayFooterProduct'));
         // $producto = Product::getProductName(1);
-        //dump($product);
-        $this->context->smarty->assign(array('product' => $product,));
+        
         
         $this->context->controller->addCSS($this->_path.'/views/css/product.css');
         return $this->context->smarty->fetch($this->local_path.'views/templates/hook/product.tpl');
     }
-    // 
-    // Add the CSS & JavaScript files you want to be loaded in the BO.
-    // 
+
     // public function hookBackOfficeHeader()
     // {
     //     if (Tools::getValue('module_name') == $this->name) {
