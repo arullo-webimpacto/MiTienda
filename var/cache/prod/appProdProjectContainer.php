@@ -16,11 +16,6 @@ if (!\class_exists(appProdProjectContainer::class, false)) {
 
 return new \ContainerEbxvawj\appProdProjectContainer([
     'container.build_hash' => 'Ebxvawj',
-<<<<<<< HEAD
-    'container.build_id' => 'a3506108',
-    'container.build_time' => 1589470427,
-=======
-    'container.build_id' => 'f128e684',
-    'container.build_time' => 1589532459,
->>>>>>> rama-assign
+    'container.build_id' => '486c9683',
+    'container.build_time' => 1589532658,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerEbxvawj');
