@@ -1,19 +1,11 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.33, created on 2020-05-14 17:34:06
-=======
-/* Smarty version 3.1.33, created on 2020-05-15 10:48:01
->>>>>>> rama-assign
+/* Smarty version 3.1.33, created on 2020-05-15 11:12:16
   from 'C:\xampp\htdocs\mitienda\themes\classic\templates\_partials\javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-<<<<<<< HEAD
-  'unifunc' => 'content_5ebd64ee7b5497_62399499',
-=======
-  'unifunc' => 'content_5ebe5741e764e5_11344417',
->>>>>>> rama-assign
+  'unifunc' => 'content_5ebe5cf0d990b1_05023106',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -28,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_5ebd64ee7b5497_62399499 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_5ebe5741e764e5_11344417 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> rama-assign
+function content_5ebe5cf0d990b1_05023106 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['javascript']->value['external'], 'js');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['js']->value) {

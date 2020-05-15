@@ -1,19 +1,11 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.33, created on 2020-05-14 17:34:07
-=======
-/* Smarty version 3.1.33, created on 2020-05-15 10:48:02
->>>>>>> rama-assign
+/* Smarty version 3.1.33, created on 2020-05-15 11:12:17
   from 'module:pscontactinfopscontactinf' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-<<<<<<< HEAD
-  'unifunc' => 'content_5ebd64ef0fe8e3_95011166',
-=======
-  'unifunc' => 'content_5ebe5742f265b5_04289203',
->>>>>>> rama-assign
+  'unifunc' => 'content_5ebe5cf1dcecf3_16596049',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -28,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_5ebd64ef0fe8e3_95011166 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_5ebe5742f265b5_04289203 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> rama-assign
+function content_5ebe5cf1dcecf3_16596049 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="block-contact col-md-3 links wrapper">
   <div class="hidden-sm-down">

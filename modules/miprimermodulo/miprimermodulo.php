@@ -60,16 +60,6 @@ class Miprimermodulo extends Module
      * Don't forget to create update methods if needed:
      * http://doc.prestashop.com/display/PS16/Enabling+the+Auto-Update
      */
-    // public function install()
-    // {
-    //     Configuration::updateValue('MIPRIMERMODULO_LIVE_MODE', false);
-
-    //     return parent::install() &&
-    //         $this->registerHook('header') &&
-    //         $this->registerHook('backOfficeHeader') &&
-    //         $this->registerHook('displayLeftColumn') &&
-    //         $this->registerHook('displayHome');
-    // }
     public function install()
     {
         // Configuration::updateValue('MODULO_ABRAHAM_TEXTO_HOME', false);
@@ -83,10 +73,11 @@ class Miprimermodulo extends Module
 
         return true;
 
+        // return parent::install() &&
+        //     $this->registerHook('displayHome') &&
+        //     $this->registerHook('displayFooterProduct');
 
-        // if( !parent::install() || !$this->registerHook('displayHome'))
-        //     return false;
-        // return true;
+
     }
 
     public function uninstall()

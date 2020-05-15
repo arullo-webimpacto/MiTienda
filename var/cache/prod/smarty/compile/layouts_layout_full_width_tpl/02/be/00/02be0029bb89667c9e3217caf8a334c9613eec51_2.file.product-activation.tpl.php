@@ -1,19 +1,11 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.33, created on 2020-05-14 17:34:06
-=======
-/* Smarty version 3.1.33, created on 2020-05-15 10:48:01
->>>>>>> rama-assign
+/* Smarty version 3.1.33, created on 2020-05-15 11:12:16
   from 'C:\xampp\htdocs\mitienda\themes\classic\templates\catalog\_partials\product-activation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-<<<<<<< HEAD
-  'unifunc' => 'content_5ebd64ee8188d9_50283975',
-=======
-  'unifunc' => 'content_5ebe5741ed9ab3_91718907',
->>>>>>> rama-assign
+  'unifunc' => 'content_5ebe5cf0dfab18_76349130',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -28,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_5ebd64ee8188d9_50283975 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_5ebe5741ed9ab3_91718907 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> rama-assign
+function content_5ebe5cf0dfab18_76349130 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['page']->value['admin_notifications']) {?>
   <div class="alert alert-warning row" role="alert">
     <div class="container">
