@@ -22,10 +22,23 @@
 *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+
 <div class="colores">
 	<h1>{$texto_variable}</h1>
-	<h1> Producto: {$product}</h1>
-	<h1> ID_categoria: {$categoria_id}</h1>
-	<h1> NAME_categoria: {$categoria_name}</h1>
+	<h1> Producto: {$product.name}</h1>
+	<h1> ID_categoria: {$product.id_category_default}</h1>
+	<h1> NAME_categoria: {$product.category_name}</h1>
+	<div class="images-container">
+  {block name='product_cover'}
+    <div class="product-cover">
+      {if $product.cover}
+        <img class="js-qv-product-cover" src="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
+        <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
+          <i class="material-icons zoom-in">&#xE8FF;</i>
+        </div>
+      {/if}
+    </div>
+  {/block}
+	
 </div>
 

@@ -1,11 +1,19 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.33, created on 2020-05-14 17:34:06
+=======
+/* Smarty version 3.1.33, created on 2020-05-15 10:48:01
+>>>>>>> rama-assign
   from 'C:\xampp\htdocs\mitienda\themes\classic\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
+<<<<<<< HEAD
   'unifunc' => 'content_5ebd64ee76cee4_77971518',
+=======
+  'unifunc' => 'content_5ebe5741e30ab4_20881803',
+>>>>>>> rama-assign
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +28,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_5ebd64ee76cee4_77971518 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_5ebe5741e30ab4_20881803 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> rama-assign
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['stylesheets']->value['external'], 'stylesheet');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['stylesheet']->value) {
