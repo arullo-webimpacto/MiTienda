@@ -189,12 +189,24 @@ class Miprimermodulo extends Module
     {
         $texto = Configuration::get('MODULO_ABRAHAM_TEXTO_HOME');
         $this->context->smarty->assign(array('texto_variable' => $texto,));
-        $product = $params['product']['name'];
+        //Limpieza de codigo.Metiendo directamente el producto
+        // $productt = $params['product']['name'];
+        // $this->context->smarty->assign(array('productt' => $productt,));
+        // $categoria_id = $params['product']['id_category_default'];
+        // $this->context->smarty->assign(array('categoria_id' => $categoria_id,));
+        // $categoria_name = $params['product']['category_name'];
+        // $this->context->smarty->assign(array('categoria_name' => $categoria_name,));
+        //$imagenes2 = new Product($params['product']);
+
+        $product =$params['product'];
         $this->context->smarty->assign(array('product' => $product,));
-        $categoria_id = $params['product']['id_category_default'];
-        $this->context->smarty->assign(array('categoria_id' => $categoria_id,));
-        $categoria_name = $params['product']['category_name'];
-        $this->context->smarty->assign(array('categoria_name' => $categoria_name,));
+        // $id_image = $params['product']['cover']['id_image'];
+        // $this->context->smarty->assign(array('id_image' => $id_image,));
+        // $link_rewrite = $params['product']['link_rewrite'];
+        // $this->context->smarty->assign(array('link_rewrite' => $link_rewrite,));
+        // $medida = $params['product'];
+        //dump($product);
+        //$this->context->smarty->assign(array('categoria_name' => $categoria_name,));
         //dump($categoria);
         //dump($params['product']['id_category_default']);
         
